@@ -16,7 +16,16 @@ let UserSchema = new Schema({
     },
     otp : {
         type : String,
-        
+       
+    },
+    verify: {
+        type : Boolean,
+        default : false
+    },
+    rule : {
+        type : String,
+        enum : ["Admi", "User", "marchen"],
+       default : "User"
     }
 })
 module.exports = mongoose.model(`User`, UserSchema)

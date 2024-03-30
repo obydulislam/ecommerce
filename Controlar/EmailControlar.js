@@ -44,7 +44,7 @@ let Emailcontrolar = async (req,res)=>{
                         from: 'obydulislam018834', 
                         to: "nibirtanjir@gmail.com", 
                         subject: "Hello ✔", 
-                        html: `<b> Your Otp is______ ${otp}</b>`, 
+                        html: `<b> Your Otp is ${otp}</b>`, 
                       });
                       
                     res.send({success : "Done"})
