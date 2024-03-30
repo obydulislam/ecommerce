@@ -25,8 +25,8 @@ let Emailcontrolar = async (req,res)=>{
                 email : email,
                 password : password
             })
-            user.save()
-            res.send({success : "Done"})
+            // user.save()
+            // res.send({success : "Done"})
         }
 }
 module.exports = Emailcontrolar
