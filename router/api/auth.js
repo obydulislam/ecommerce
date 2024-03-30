@@ -1,12 +1,10 @@
 const express = require("express");
 const _ = express.Router();
+const EmailControlar = require("../../Controlar/EmailControlar")
 
 
-_.post("/reqistrions", function(req,res){
+_.post("/reqistrions",EmailControlar )
 
-    console.log(req.body)
-
-})
 
 
 module.exports = _
