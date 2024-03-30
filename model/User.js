@@ -13,6 +13,10 @@ let UserSchema = new Schema({
     password : {
         type : String,
         required : true
+    },
+    otp : {
+        type : String,
+        
     }
 })
 module.exports = mongoose.model(`User`, UserSchema)
