@@ -41,8 +41,8 @@ let Emailcontrolar = async (req,res)=>{
                         },
                       });
                       const info = await transporter.sendMail({
-                        from: 'obydulislam018834', 
-                        to: "nibirtanjir@gmail.com", 
+                        from: process.env.BASE_EMAIL, 
+                        to: email, 
                         subject: "Hello ✔", 
                         html: `<b> Your Otp is ${otp}</b>`, 
                       });
